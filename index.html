@@ -3,12 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnyAndAll — Make Tech Delightful</title>
-    <meta name="description" content="AnyAndAll builds beautiful websites, custom software, and intelligent tools for small businesses. We make technology feel like magic, not a burden.">
+    <title>AnyAndAll — Web Design & Software Development for Small Businesses</title>
+    <meta name="description" content="AnyAndAll creates custom websites, software, and automation for small businesses. Technology that feels like magic, not a burden. Get started today.">
+    <link rel="canonical" href="https://a3dev.org/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="AnyAndAll — Web Design & Software Development for Small Businesses">
+    <meta property="og:description" content="AnyAndAll creates custom websites, software, and automation for small businesses. Technology that feels like magic, not a burden.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://a3dev.org/">
+    <meta property="og:image" content="https://a3dev.org/assets/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AnyAndAll — Web Design & Software Development for Small Businesses">
+    <meta name="twitter:description" content="AnyAndAll creates custom websites, software, and automation for small businesses. Technology that feels like magic, not a burden.">
+    <meta name="twitter:image" content="https://a3dev.org/assets/og-image.jpg">
+    
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "AnyAndAll",
+      "alternateName": "A3",
+      "description": "Custom web design, software development, and business automation for small businesses",
+      "url": "https://a3dev.org/",
+      "telephone": "+1-555-123-4567",
+      "email": "hello@a3dev.org",
+      "priceRange": "$$",
+      "areaServed": {
+        "@type": "State",
+        "name": "United States"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Web Development Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Web Design & Development",
+              "description": "Custom website design and development for small businesses"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom Software Solutions",
+              "description": "Tailored software solutions that eliminate pain points and streamline operations"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Business Process Automation",
+              "description": "Intelligent automation tools that work around the clock"
+            }
+          }
+        ]
+      },
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "AnyAndAll Founder"
+        }
+      ],
+      "sameAs": [
+        "https://a3dev.org/"
+      ]
+    }
+    </script>
+    
     <style>
         /* ========================================
            CSS VARIABLES — Warm Palette
@@ -932,6 +1006,23 @@
             font-size: 0.82rem;
             color: var(--text-tertiary);
         }
+        
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: flex-end;
+        }
+        
+        .footer-contact a {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            transition: color 0.3s ease;
+        }
+        
+        .footer-contact a:hover {
+            color: var(--text-primary);
+        }
 
         /* ========================================
            RESPONSIVE
@@ -1031,6 +1122,10 @@
                 gap: 1rem;
                 text-align: center;
                 padding: 2rem 1.5rem;
+            }
+            
+            .footer-contact {
+                align-items: center;
             }
 
             .hero-sun {
@@ -1149,13 +1244,13 @@
                     <div class="portfolio-card">
                         <span class="portfolio-card-label label-before">Before</span>
                         <div class="portfolio-card-scroll">
-                            <img src="assets/before.png" alt="Varsity Mulching — original website">
+                            <img src="assets/before.png" alt="Varsity Mulching original website before AnyAndAll redesign">
                         </div>
                     </div>
                     <div class="portfolio-card">
                         <span class="portfolio-card-label label-after">After</span>
                         <div class="portfolio-card-scroll">
-                            <img src="assets/after.png" alt="Varsity Mulching — redesigned by AnyAndAll">
+                            <img src="assets/after.png" alt="Varsity Mulching modern redesigned website by AnyAndAll featuring hero carousel and mulch calculator">
                         </div>
                     </div>
                 </div>
@@ -1256,6 +1351,10 @@
     <!-- ============ FOOTER ============ -->
     <footer class="footer">
         <div class="footer-logo">A<sup>3</sup></div>
+        <div class="footer-contact">
+            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+            <a href="mailto:hello@a3dev.org">hello@a3dev.org</a>
+        </div>
         <p class="footer-text">&copy; 2026 AnyAndAll. Making tech delightful.</p>
     </footer>
 
